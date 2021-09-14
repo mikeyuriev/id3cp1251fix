@@ -1,0 +1,33 @@
+cabal-version: 1.12
+
+-- This file has been generated from package.yaml by hpack version 0.34.4.
+--
+-- see: https://github.com/sol/hpack
+
+name:           id3cp1251fix
+version:        0.1.0.0
+description:    Utility for decoding CP1251 ID3 tags to UTF8
+category:       Utils
+homepage:       https://github.com/mikeyuriev/id3cp1251fix#readme
+author:         Mike Yuriev
+maintainer:     mikeyuriev@gmail.com
+copyright:      2021 Mike Yuriev
+license:        BSD3
+license-file:   LICENSE
+build-type:     Simple
+extra-source-files:
+    README.md
+
+executable id3cp1251fix
+  main-is: Main.hs
+  other-modules:
+      Paths_id3cp1251fix
+  hs-source-dirs:
+      src
+  build-depends:
+      base >=4.7 && <5
+    , encoding >=0.8
+    , glob-posix >=0.2
+    , htaglib >=1.2 && <2
+    , text >=1.2 && <2
+  default-language: Haskell2010
